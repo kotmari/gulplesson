@@ -1,0 +1,181 @@
+.holidays {
+    width: 940px;
+    height: 1031px;
+  }
+  
+  .grid-holidays {
+    margin-top: 35px;
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .holiday__item {
+    height: 310px;
+    width: 300px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item1 {
+    background-image: url(@img/bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+  }
+  
+  .item2 {
+    @extend .item1;
+    background-image: url(@img/space.png);
+  }
+  .item3 {
+    @extend .item1;
+    background-image: url(@img/extreme-img.png);
+  }
+  
+  .item4 {
+    @extend .item1;
+    background-image: url(@img/games-img.png);
+  }
+  
+  .item5 {
+    @extend .item1;
+    background-image: url(@img/object.png);
+  }
+  .item6 {
+    @extend .item1;
+    background-image: url(@img/img-relaxs.png);
+  }
+  
+  .item7 {
+    @extend .item1;
+    background-image: url(@img/trevel-img.png);
+  }
+  
+  .item5:nth-of-type(5),
+  .item6:nth-of-type(6) {
+    width: 614px;
+    grid-column: span 2;
+  }
+  
+  @media (max-width: 968px) {
+    .holidays {
+      width: 748px;
+      height: 980px;
+    }
+  
+    .grid-holidays {
+      margin-top: 33px;
+      display: grid;
+      row-gap: 17px;
+      column-gap: 17px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  
+    .holiday__item {
+      width: 236px;
+    }
+  
+    .item5:nth-of-type(5),
+    .item6:nth-of-type(6) {
+      width: 486px;
+    }
+  }
+  
+  @media (max-width: 786px) {
+    .holidays {
+      width: 616px;
+    }
+  
+    .grid-holidays {
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+  
+    .holiday__item {
+      width: 196px;
+    }
+  
+    .item5:nth-of-type(5),
+    .item6:nth-of-type(6) {
+      width: 402px;
+    }
+  }
+  
+  @media (max-width: 598px) {
+    .holidays {
+      width: 516px;
+      height: 822px;
+    }
+  
+    .grid-holidays {
+      row-gap: 8px;
+      column-gap: 8px;
+    }
+  
+    .holiday__item {
+      width: 166px;
+    }
+  
+    .item5:nth-of-type(5),
+    .item6:nth-of-type(6) {
+      width: 340px;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .holidays {
+      width: 466px;
+    }
+  
+    .grid-holidays {
+      row-gap: 6px;
+      column-gap: 6px;
+    }
+  
+    .holiday__item {
+      width: 126px;
+    }
+  
+    .item5:nth-of-type(5),
+    .item6:nth-of-type(6) {
+      width: 260px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .holidays {
+      width: 320px;
+      height: 975px;
+      margin: 0 auto;
+    }
+  
+    .grid-holidays {
+      // display: grid;
+      // gap: 10px;
+      // grid-template-columns: repeat(1, 1fr);
+      // grid-template-rows: repeat(1, 1fr);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .holiday__item {
+      width: 300px;
+      height: 119px;
+    }
+  
+    .item5:nth-of-type(5),
+    .item6:nth-of-type(6) {
+      width: 300px;
+      grid-column: span 1;
+    }
+  }

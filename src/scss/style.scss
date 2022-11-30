@@ -1,0 +1,46 @@
+@import "base/reset";
+@import "base/variables";
+@import "base/mixins";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900&display=swap);
+
+%font-item {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+%font-list {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+%font-card {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 22.5px;
+  letter-spacing: 0.2px;
+}
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+@import 'common/container';
+@import 'common/header';
+@import 'common/page_blocks';
+@import 'common/page_main';
+@import 'common/page_work';
+@import 'common/page_partner';
+@import 'common/page_holidays';
+@import 'common/page_forms';
+@import 'common/footer';
+
+

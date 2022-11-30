@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title" : "Головна"
+})
+<body>
+    <div class="wrapper">
+    @@include('html/header.html', {})
+    <main class="page">
+        @@include('html/page_main.html', {})
+        @@include('html/page_work.html', {})
+        @@include('html/page_partner.html', {})
+        @@include('html/page_holidays.html', {})
+        @@include('html/page_forms.html', {})
+    </main>
+    @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+    
+</body>
+</html>

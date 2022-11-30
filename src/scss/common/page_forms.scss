@@ -1,0 +1,132 @@
+.forms {
+    width: 530px;
+    height: 158px;
+  }
+  
+  .activ__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 14px;
+    color: #666666;
+    margin: 52px auto 0;
+    text-align: center;
+  }
+  .activ {
+    margin: 25px auto;
+    text-align: center;
+  }
+  .activ__form {
+    width: 289px;
+    height: 20px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+  }
+  .activ__btm {
+    width: 172px;
+    height: 40px;
+    background: $accent;
+    border-radius: 40px;
+    margin: 0px 0px 0px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btm-text-activ {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .forms {
+      width: 530px;
+      height: 155px;
+    }
+  
+    .activ__title {
+      margin: 54px auto 0px;
+    }
+  
+    .activ__form {
+      width: 279px;
+      padding: 10px 2px 7px 8px;
+    }
+    .activ__btm {
+      border-radius: 40px;
+      margin: 0px 0px 0px 10px;
+    }
+  }
+  
+  @media (max-width: 568px) {
+    .forms {
+      width: 430px;
+      height: 155px;
+    }
+  
+    .activ__title {
+      margin: 40px auto 0px;
+    }
+  
+    .activ__form {
+      width: 269px;
+      padding: 10px 2px 7px 8px;
+    }
+    .activ__btm {
+      border-radius: 40px;
+      margin: 15px 0px 0px 10px;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .forms {
+      width: 430px;
+      height: 155px;
+    }
+  
+    .activ__title {
+      margin: 30px auto 0px;
+    }
+  
+    .activ__form {
+      width: 249px;
+      padding: 10px 2px 7px 8px;
+    }
+    .activ__btm {
+      border-radius: 40px;
+      margin: 15px 0px 0px 8px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .forms {
+      width: 300px;
+      height: 183px;
+    }
+  
+    .activ__title {
+      margin: 20px auto 0px;
+    }
+    .activ {
+      margin: 15px auto;
+    }
+  
+    .activ__form {
+      width: 255px;
+      height: 16px;
+    }
+  
+    .activ__btm {
+      width: 280px;
+      height: 40px;
+      margin: 10px auto 0px;
+    }
+  }

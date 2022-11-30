@@ -1,0 +1,153 @@
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+  }
+  hr {
+    background-color: $accent;
+    height: 2px;
+    border: none;
+  }
+  
+  .footer__blok {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__logo {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $accent;
+  }
+  
+  .footer__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 12px;
+    color: #444444;
+  }
+  
+  .footer__item {
+    padding-bottom: 36px;
+  }
+  
+  .footer__text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999999;
+    text-decoration: none;
+  }
+  
+  .footer__title--grey {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    padding: 5px 5px 12px 25px;
+    color: #cccccc;
+  }
+  
+  .footer-img__logo {
+    margin-bottom: 22px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer__blok {
+      width: 675px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  
+    .footer__logo {
+      width: 120px;
+      padding-right: 20px;
+    }
+  
+    .footer__title--grey {
+      padding: 2px 2px 5px 25px;
+    }
+  
+    .footer-img__logo {
+      margin-bottom: 22px;
+    }
+  }
+  
+  @media (max-width: 668px) {
+    .footer__blok {
+      width: 565px;
+      margin: 0 auto;
+      padding-top: 30px;
+    }
+  
+    .footer__logo {
+      width: 120px;
+      padding-right: 10px;
+    }
+  
+    .footer__title--grey {
+      padding: 2px 2px 5px 15px;
+    }
+  
+    .footer-img__logo {
+      margin-bottom: 22px;
+    }
+  }
+  
+  @media (max-width: 475px) {
+    .footer__blok {
+      width: 300px;
+      padding-top: 11px;
+      display: block;
+      text-align: center;
+    }
+  
+    .footer__logo {
+      width: 120px;
+      padding-right: 0px;
+    }
+    .footer__nav {
+      margin-bottom: -7px;
+    }
+  
+    .footer__title {
+      padding: 14px 0 0px 0;
+    }
+  
+    .footer__item {
+      width: 300px;
+      height: 52px;
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .footer__item li {
+      margin: 0;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer__text {
+      padding: 0px 6px 0px 7px;
+      text-align: center;
+    }
+  
+    .footer__title--grey {
+      padding: 15px 0px 5px 0px;
+      text-align: center;
+    }
+  }
+  

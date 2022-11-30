@@ -1,0 +1,309 @@
+.work {
+    width: 960px;
+    height: 461px;
+  }
+  
+  .section__title {
+    @extend %font-item;
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    text-align: center;
+    color: #444444;
+  }
+  
+  .work__card {
+    width: 940px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px auto;
+  }
+  
+  .card {
+    height: 396px;
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  
+    .card__title {
+      padding: 0 15px 8px 15px;
+    }
+  }
+  
+  .card__one {
+    background-image: url('@img/step-one-imag.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    .card__btm {
+      width: 70px;
+      height: 20px;
+      background: $accent;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .btm-step {
+      text-decoration: none;
+      color: $main-color;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  
+    .card__item {
+      font-family: Montserrat;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 26px;
+      line-height: 26px;
+      letter-spacing: 1.9px;
+      margin-top: 20px;
+      color: $main-color;
+    }
+    .card__text {
+      color: $text-card;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px;
+      margin-top: 25px;
+    }
+  }
+  
+  .card__two {
+    @extend .card__one;
+    background-image: url('@img/step-two-imag.png');
+  
+    .card__item {
+      margin-top: 23px;
+    }
+  
+    .card__text {
+      margin-top: 18px;
+    }
+  }
+  
+  .card__tree {
+    @extend .card__one;
+    background-image: url("@img/step-thee-imag.png");
+    margin-right: 0;
+  }
+  
+  @media (max-width: 1040px) {
+    .section__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 27px;
+    }
+  
+    .work {
+      width: 864px;
+      height: 457px;
+    }
+  
+    .work__card {
+      width: 824px;
+  
+      .card {
+        width: 268px;
+  
+        .card__title {
+          padding: 0 20px 13px 20px;
+        }
+      }
+    }
+  
+    .card__one {
+      .card__item {
+        font-size: 24px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        margin-top: 43px;
+      }
+  
+      .card__text {
+        margin-top: 28px;
+      }
+    }
+  
+    .card__two {
+      .card__item {
+        margin-top: 12px;
+      }
+  
+      .card__text {
+        margin-top: 23px;
+      }
+    }
+  
+    .card__tree {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 848px) {
+    .work {
+      width: 804px;
+      height: 457px;
+    }
+  
+    .work__card {
+      width: 784px;
+  
+      .card {
+        width: 32%;
+        height: 360px;
+      }
+    }
+  }
+  
+  @media (max-width: 798px) {
+    .work {
+      width: 764px;
+      height: 457px;
+    }
+  
+    .work__card {
+      width: 724px;
+    }
+  }
+  
+  @media (max-width: 748px) {
+    .work {
+      width: 714px;
+    }
+  
+    .work__card {
+      width: 674px;
+    }
+  }
+  
+  @media (max-width: 718px) {
+    .work {
+      width: 684px;
+    }
+  
+    .work__card {
+      width: 644px;
+    }
+  
+    .card__one {
+      .card__item {
+        font-size: 18px;
+  
+        line-height: 14px;
+      }
+    }
+  }
+  
+  @media (max-width: 678px) {
+    .work {
+      width: 644px;
+    }
+  
+    .work__card {
+      width: 614px;
+    }
+  }
+  
+  @media (max-width: 638px) {
+    .work {
+      width: 594px;
+    }
+  
+    .work__card {
+      width: 564px;
+    }
+  }
+  
+  @media (max-width: 578px) {
+    .work {
+      width: 534px;
+    }
+  
+    .work__card {
+      width: 534px;
+    }
+  }
+  
+  @media (max-width: 538px) {
+    .work {
+      width: 504px;
+    }
+  
+    .work__card {
+      width: 474px;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .work {
+      width: 320px;
+      height: 772px;
+    }
+  
+    .section__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      letter-spacing: 0px;
+    }
+  
+    .work__card {
+      width: 300px;
+      height: 240px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 15px auto;
+      padding: 0;
+  
+      .card {
+        height: 238px;
+        width: 300px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+  
+      .card__title {
+        padding: 0 20px 16px 20px;
+      }
+    }
+    .card__one {
+      margin-right: 0px;
+  
+      .card__item {
+        font-size: 24px;
+        line-height: 14px;
+        margin-top: 45px;
+      }
+  
+      .card__text {
+        margin-top: 25px;
+      }
+    }
+  
+    .card__two {
+      margin-right: 0px;
+  
+      .card__item {
+        margin-top: 29px;
+      }
+  
+      .card__text {
+        margin-top: 25px;
+      }
+    }
+  }
